@@ -4,6 +4,8 @@ A handheld reaction time tester built on ESP32 with LED countdown and OLED displ
 
 Press the button to start. LEDs count down 3→2→1, then all three light up at a random delay. Press the button as fast as you can. Your reaction time shows on the OLED display.
 
+DEMO: https://youtu.be/TKW2-85YZjQ
+
 ## Hardware
 
 - ESP32
