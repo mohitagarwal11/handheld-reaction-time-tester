@@ -21,8 +21,8 @@ void allOff() {
 // to turn on all leds
 void allOn() {
   ledcWrite(GREEN_LED_PIN, 60);
-  ledcWrite(YELLOW_LED_PIN, 60);
-  ledcWrite(RED_LED_PIN, 60);
+  ledcWrite(YELLOW_LED_PIN, 50);
+  ledcWrite(RED_LED_PIN, 30);
 }
 
 // boolean to check if button is pressed or not
@@ -78,9 +78,9 @@ void setup() {
 
 // this runs on infinite loop until we unplug
 void loop() {
-  if (!buttonPressed()) return;
+  // if (!buttonPressed()) return;
 
-  waitForButtonRelease();
+  // waitForButtonRelease();
 
   // this is the countdown part
   showText("3");
@@ -137,6 +137,6 @@ void loop() {
   waitForButtonRelease();
 
   // reset to start
-  allOn();
-  showText("Press btn", "to start");
+  // allOn();
+  // showText("Press btn", "to start");
 }
